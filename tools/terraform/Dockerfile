@@ -1,0 +1,3 @@
+ARG TERRAFORM_VERSION=1.6.2
+
+FROM hashicorp/terraform:${TERRAFORM_VERSION}

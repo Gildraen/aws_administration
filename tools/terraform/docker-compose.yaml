@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  terraform:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../../:/app
+      - ../aws/config:/root/.aws
+    working_dir: /app
