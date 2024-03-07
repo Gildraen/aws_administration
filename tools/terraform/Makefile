@@ -12,3 +12,6 @@ docker-terraform-init: ## Initialize based on main.tf
 
 docker-terraform-plan: ## Plan terraform
 	$(TERRAFORM) -chdir=terraform plan
+
+docker-terraform-destroy: #Destroy all resources
+	$(TERRAFORM) -chdir=terraform destroy
